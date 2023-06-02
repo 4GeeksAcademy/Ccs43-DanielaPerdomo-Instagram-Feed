@@ -1,291 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram Foto Feed con Bootstrap</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/c92bcf70f6.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- INICIO NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div>
-          <i class="fa-brands fa-instagram fs-5"></i>
-          <a class="navbar-brand" href="#">Instagram</a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <button
-                type="button"
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Create a new post
-              </button>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fas fa-cog"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                <li>
-                  <a class="dropdown-item text-danger border-top" href="#"
-                    >Log out</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Foto Feed con Bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/c92bcf70f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- INICIO NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div>
+        <i class="fa-brands fa-instagram fs-5"></i>
+        <a class="navbar-brand" href="#">Instagram</a>
       </div>
-    </nav>
-    <!-- FIN NAVBAR -->
-    <!-- INICIO DE MODAL -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Create a new post
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div>Caption:</div>
-            <div class="form-floating">
-              <textarea
-                class="form-control mb-1"
-                placeholder="Leave a comment here"
-                id="floatingTextarea"
-                style="height: 100px"
-              ></textarea>
-              <label for="floatingTextarea2"></label>
-            </div>
-            <div>
-              <i class="fa-solid fa-camera border p-2"></i>
-              <i class="fa-solid fa-location-dot border p-2"></i>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
             </button>
-            <button type="button" class="btn btn-success">Publish</button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-cog"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <a class="dropdown-item text-danger border-top" href="#">Log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN NAVBAR -->
+  <!-- INICIO DE MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Create a new post
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>Caption:</div>
+          <div class="form-floating">
+            <textarea class="form-control mb-1" placeholder="Leave a comment here" id="floatingTextarea"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2"></label>
           </div>
+          <div>
+            <i class="fa-solid fa-camera border p-2"></i>
+            <i class="fa-solid fa-location-dot border p-2"></i>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-success">Publish</button>
         </div>
       </div>
     </div>
-    <!-- FIN DE MODAL -->
-    <!-- INICIO PILLS -->
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="pills-home-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-home"
-          type="button"
-          role="tab"
-          aria-controls="pills-home"
-          aria-selected="true"
-        >
-          <i class="fa-solid fa-table-cells"></i>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="pills-profile-tab"
-          data-bs-toggle="pill"
-          data-bs-target="#pills-profile"
-          type="button"
-          role="tab"
-          aria-controls="pills-profile"
-          aria-selected="false"
-        >
-          <i class="fa-solid fa-table-cells"></i>
-        </button>
-      </li>
-    </ul>
-    <!-- INICIO MATRIZ IMAGENES -->
-    <div class="tab-content" id="pills-tabContent">
-      <div
-        class="tab-pane fade show active"
-        id="pills-home"
-        role="tabpanel"
-        aria-labelledby="pills-home-tab"
-        tabindex="0"
-      >
-        <div class="row m-1">
-          <div class="d-flex col-sm-12 col-md-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
-          <div class="d-flex col-sm-12 col-md-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
-          <div class="d-flex col-sm-12 col-md-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
+  </div>
+<!-- FIN DE MODAL -->
+<!-- INICIO PILLS -->
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+        <i class="fa-solid fa-table-cells"></i>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+        <i class="fa-solid fa-table-cells"></i>
+      </button>
+    </li>
+  </ul>
+<!-- INICIO MATRIZ IMAGENES -->
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="row m-1">
+        <div class="d-flex col-sm-12 col-md-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
         </div>
-        <div class="row m-1">
-          <div class="d-flex col-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
-          <div class="d-flex col-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
-          <div class="d-flex col-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
+        <div class="d-flex col-sm-12 col-md-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
         </div>
-        <div class="row m-1">
-          <div class="d-flex col-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
-          <div class="d-flex col-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
-          <div class="d-flex col-4 p-1">
-            <img
-              class="w-100"
-              src="https://picsum.photos/200/300"
-              alt="imagen"
-            />
-          </div>
+        <div class="d-flex col-sm-12 col-md-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
         </div>
       </div>
-      <!-- FIN MATRIZ IMAGENES -->
-      <!-- INICIO COLUMNA IMAGENES -->
-      <div
-        class="tab-pane fade"
-        id="pills-profile"
-        role="tabpanel"
-        aria-labelledby="pills-profile-tab"
-        tabindex="0"
-      >
-        <div
-          class="d-flex justify-content-center flex-column align-items-center"
-        >
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+      <div class="row m-1">
+        <div class="d-flex col-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+        </div>
+        <div class="d-flex col-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+        </div>
+        <div class="d-flex col-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
         </div>
       </div>
-      <!-- FIN COLUMNA IMAGENES -->
+      <div class="row m-1">
+        <div class="d-flex col-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+        </div>
+        <div class="d-flex col-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+        </div>
+        <div class="d-flex col-4 p-1">
+          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+        </div>
+      </div>
     </div>
-    <!-- FIN PILLS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<!-- FIN MATRIZ IMAGENES -->
+<!-- INICIO COLUMNA IMAGENES -->
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <div class="d-flex justify-content-between">
+          <div>My Crazy Dog Spark!</div>
+          <div>08/26</div>
+        </div>
+        <div class="w-100 h-100"><img src="https://picsum.photos/200"></div>
+        <div>
+          <div><strong>204 Likes</strong></div>
+          <div>This is an example of a very good photo that you can post on Instagram</div>
+        </div>
+      </div>
+    </div>
+<!-- FIN COLUMNA IMAGENES -->
+  </div>
+<!-- FIN PILLS-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
