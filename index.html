@@ -62,7 +62,7 @@
         <div class="modal-body">
           <div>Caption:</div>
           <div class="form-floating">
-            <textarea class="form-control mb-1" placeholder="Leave a comment here" id="floatingTextarea"
+            <textarea class="form-control mb-1" placeholder="Add the caption of your post here" id="floatingTextarea"
               style="height: 100px"></textarea>
             <label for="floatingTextarea2"></label>
           </div>
@@ -80,9 +80,9 @@
       </div>
     </div>
   </div>
-<!-- FIN DE MODAL -->
-<!-- INICIO PILLS -->
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <!-- FIN DE MODAL -->
+  <!-- INICIO PILLS -->
+  <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
         type="button" role="tab" aria-controls="pills-home" aria-selected="true">
@@ -96,62 +96,117 @@
       </button>
     </li>
   </ul>
-<!-- INICIO MATRIZ IMAGENES -->
+  <!-- INICIO MATRIZ IMAGENES -->
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
       tabindex="0">
       <div class="row m-1">
         <div class="d-flex col-sm-12 col-md-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+          <img class="w-100" src="https://picsum.photos/id/237/200/300" alt="imagen" />
         </div>
         <div class="d-flex col-sm-12 col-md-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+          <img class="w-100" src="https://picsum.photos/id/80/200/300" alt="imagen" />
         </div>
         <div class="d-flex col-sm-12 col-md-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+          <img class="w-100" src="https://picsum.photos/id/20/200/300" alt="imagen" />
+        </div>
+      </div>
+      <div class="row m-1">
+        <div class="d-flex col-sm-12 col-md-4 p-1">
+          <img class="w-100" src="https://picsum.photos/id/6/200/300" alt="imagen" />
+        </div>
+        <div class="d-flex col-sm-12 col-md-4 p-1">
+          <img class="w-100" src="https://picsum.photos/id/15/200/300" alt="imagen" />
+        </div>
+        <div class="d-flex col-sm-12 col-md-4 p-1">
+          <img class="w-100" src="https://picsum.photos/id/24/200/300" alt="imagen" />
         </div>
       </div>
       <div class="row m-1">
         <div class="d-flex col-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+          <img class="w-100" src="https://picsum.photos/id/40/200/300" alt="imagen" />
         </div>
         <div class="d-flex col-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+          <img class="w-100" src="https://picsum.photos/id/56/200/300" alt="imagen" />
         </div>
         <div class="d-flex col-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
-        </div>
-      </div>
-      <div class="row m-1">
-        <div class="d-flex col-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
-        </div>
-        <div class="d-flex col-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
-        </div>
-        <div class="d-flex col-4 p-1">
-          <img class="w-100" src="https://picsum.photos/200/300" alt="imagen" />
+          <img class="w-100" src="https://picsum.photos/id/82/200/300" alt="imagen" />
         </div>
       </div>
     </div>
-<!-- FIN MATRIZ IMAGENES -->
-<!-- INICIO COLUMNA IMAGENES -->
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-      <div class="d-flex justify-content-center flex-column align-items-center">
-        <div class="d-flex justify-content-between">
-          <div>My Crazy Dog Spark!</div>
-          <div>08/26</div>
+    <!-- FIN MATRIZ IMAGENES -->
+    <!-- INICIO COLUMNA IMAGENES -->
+    <div class="tab-pane fade d-flex justify-content-center col-sm-12" id="pills-profile" role="tabpanel"
+      aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="w-50 d-flex justify-content-center flex-column align-items-center">
+        <div class="post border border-light my-3">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <div class="fs-5">My crazy dog Spark!</div>
+            </div>
+            <div>08/26</div>
+          </div>
+          <div class="imagen">
+            <img class="img-fluid" src="https://picsum.photos/id/237/520/400">
+          </div>
+          <div class="liked">
+            <p class="m-0">
+              <b class="likes">204 Likes</b>
+            </p>
+          </div>
+          <div>
+            <p class="m-0 fs-6">
+              This is an example of a very good photo that you can post on Instagram
+            </p>
+          </div>
         </div>
-        <div class="w-100 h-100"><img src="https://picsum.photos/200"></div>
-        <div>
-          <div><strong>204 Likes</strong></div>
-          <div>This is an example of a very good photo that you can post on Instagram</div>
+        <div class="post border border-light my-3">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <div class="fs-5">Amazing photo in a grayscale!</div>
+            </div>
+            <div>06/10</div>
+          </div>
+          <div class="imagen">
+            <img class="img-fluid" src="https://picsum.photos/id/80/600/400">
+          </div>
+          <div class="liked">
+            <p class="m-0">
+              <b class="likes">26985 Likes</b>
+            </p>
+          </div>
+          <div>
+            <p class="m-0 fs-6">
+              This is an example of a very good photo that you can post on Instagram
+            </p>
+          </div>
+        </div>
+        <div class="post border border-light my-3">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <div class="fs-5">A Photograph of my destok!!!</div>
+            </div>
+            <div>06/10</div>
+          </div>
+          <div class="imagen">
+            <img class="img-fluid" src="https://picsum.photos/id/20/420/800">
+          </div>
+          <div class="liked">
+            <p class="m-0">
+              <b class="likes">204 Likes</b>
+            </p>
+          </div>
+          <div>
+            <p class="m-0 fs-6">
+              This is an example of a very good photo that you can post on Instagram
+            </p>
+          </div>
         </div>
       </div>
     </div>
-<!-- FIN COLUMNA IMAGENES -->
+    <!-- FIN COLUMNA IMAGENES -->
   </div>
-<!-- FIN PILLS-->
+  <!-- FIN PILLS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
